@@ -46,7 +46,7 @@ export class AppComponent {
 
   afegirDepartament(){
     this.http.post<Departament>('http://localhost:3000/ex4', {
-      codi:7, nom: "IT1", ubi:"Girona1", telf:"679901", dni:"5555"
+      codi:7, nom: "IT1", ubi:"Girona1", telf:"123456", dni:"5555"
     }).subscribe( response  => {
       if (response != null) {
         console.log("Department añadido correctamente! | ", response);
